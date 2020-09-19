@@ -198,3 +198,16 @@ header i{
     border-radius: 16px;
     margin: 10px 10px 0 0;
 }
+
+
+
+
+
+
+/* large screen */
+@media only screen and (min-width: 700px){
+    .backdrop,
+    .sidenav{
+        display: none;
+    }
+}
