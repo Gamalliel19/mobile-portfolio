@@ -1,0 +1,154 @@
+:root{
+    --primary-bg: #222222;
+    --secondary-bg: #f4f4f4;
+    --third-bg: #7685F8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 15px;
+    background: var(--secondary-bg);
+}
+
+/* sidenav */
+.sidenav{
+    background: var(--primary-bg);
+    width: 80%;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 20px 40px;
+}
+.sidenav nav ul{
+    list-style: none;
+}
+.sidenav p{
+    color: #ffffff;
+}
+.sidenav a{
+    z-index: 5;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* scroll bar */
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--third-bg);
+  }
+
+/* Footer */
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: #ffffff;
+    /* display: flex;
+    justify-content: space-around; */
+}
+footer nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+footer nav ul li{
+    padding: 10px 0;
+}
+footer nav ul li i{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+footer nav ul li a{
+    color: var(--primary-bg);
+    text-decoration: none;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav ul li a.active{
+    color: var(--third-bg);
+}
+footer nav ul li i.active{
+    color: var(--third-bg);
+}
+
+
+/* header */
+
+header{
+    padding: 8px 40px;
+    background: var(--primary-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header i{
+    font-size: 20px;
+    color: var(--secondary-bg);
+    cursor: pointer;
+}
+.profile img{
+    height: 45px;
+    border-radius: 100px;
+}
+
+.container{
+    width: 82%;
+    margin: 0 auto;
+}
+
+/* home page */
+
+.home{
+    margin-top: 150px;
+}
+.home h1{
+    font-size: 40px;
+}
+.home p{
+    line-height: 47px;
+}
+.work{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.work a{
+    color: var(--third-bg);
+    text-decoration: none;
+}
+
+/* img */
+.container-img{
+    display: flex;
+    overflow-x: scroll;
+}
+.container-img img{
+    height: 300px;
+    border-radius: 16px;
+    margin: 10px 10px 0 0;
+}
