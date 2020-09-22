@@ -220,6 +220,7 @@ header i{
     color: #ffffff;
     text-decoration: none;
     transition: .5s ease;
+    border-radius: 5px;
 }
 .btn-web:hover{
     opacity: 0.9;
@@ -284,6 +285,40 @@ header i{
     margin: 320px 0 0;
 }
 
+
+/* about me */
+.about{
+    margin-top: 100px;
+}
+.about p{
+    font-size: 20px;
+    font-weight: 100;
+}
+.profile-picture{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+.profile-picture img{
+    height: 200px;
+    display: block;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+.about-desc{
+    margin: 20px 0 0;
+    font-size: 15px;
+    text-align: left;
+}
+.skills-title{
+    font-weight: 600;
+    margin-top: 40px;
+}
+.skill-desc{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    margin-top: 10px;
+}
 
 @media only screen and (min-width: 100px) and (max-width:350px){
     .project{
